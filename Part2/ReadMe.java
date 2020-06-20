@@ -1,6 +1,8 @@
 package Part2;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ReadMe {
@@ -20,13 +22,35 @@ public class ReadMe {
      */
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium dependency\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
         driver.manage().window().maximize();
 
         driver.navigate().to("https://demo.applitools.com");
+
+
+        WebElement username = driver.findElement(By.id("username"));
+        username.sendKeys("ttechno@gmail.com");
+
+
+
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("techno123.");
+
+        WebElement button = driver.findElement(By.id("log-in"));
+        button.click();
+
+        WebElement time = driver.findElement(By.cssSelector("h6[style='text-align: center;font-size: x-large;color:red']"));
+
+        System.out.println(time.getText());
+
+        String URL=driver.getCurrentUrl();
+        System.out.println(URL);
+
+
+
 
     }
 }
