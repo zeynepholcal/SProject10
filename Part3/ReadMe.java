@@ -44,7 +44,7 @@ public class ReadMe {
         System.out.println(result.getText());
 
 //        String URL = driver.getCurrentUrl();
-//        System.out.println(URL);
+//        System.out.println(URL);  
 
 
     }
