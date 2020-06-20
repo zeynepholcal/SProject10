@@ -57,8 +57,7 @@ public class ReadMe {
 
         String URL2 = driver.getCurrentUrl();
         System.out.println("Second URL: " + URL2);
-
-
+        
 
 
     }
