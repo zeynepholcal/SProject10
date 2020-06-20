@@ -51,6 +51,19 @@ public class ReadMe {
 
        currentAddress2.sendKeys("Testing Current Address part 2");
 
+       WebElement submitButton= driver.findElement(By.cssSelector("button[class='btn btn-primary']"));
+
+        //WebElement submitButton= driver.findElement(By.id("submit"));
+
+       submitButton.click();
+
+        System.out.println(username.getText());
+        System.out.println("Email is containing the \"Testing\"");
+
+        System.out.println(userEmail.getText().contains("Testing"));
+
+
+
 
 
 
