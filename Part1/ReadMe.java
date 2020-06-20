@@ -27,7 +27,7 @@ public class ReadMe {
      */
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium dependency\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
@@ -56,11 +56,11 @@ public class ReadMe {
         //WebElement submitButton= driver.findElement(By.id("submit"));
 
        submitButton.click();
+        WebElement users = driver.findElement(By.id("name"));
 
-        System.out.println(username.getText());
-        System.out.println("Email is containing the \"Testing\"");
-
-        System.out.println(userEmail.getText().contains("Testing"));
+        System.out.println(users.getText());
+        WebElement email = driver.findElement(By.id("email"));
+        System.out.println(email.getText());
 
 
 
