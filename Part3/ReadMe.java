@@ -36,20 +36,26 @@ public class ReadMe {
         WebElement search = driver.findElement(By.id("inputValEnter"));
         search.sendKeys("teddy bear");
 
-
-        WebElement click = driver.findElement(By.className("searchformButton"));
+        WebElement click = driver.findElement(By.cssSelector("span[class='searchTextSpan']"));
+        //WebElement click = driver.findElement(By.className("searchformButton"));
         click.click();
 
         Thread.sleep(3000);
 
-        WebElement result = driver.findElement(By.className("search-result-txt-section"));
+      WebElement result = driver.findElement(By.className("search-result-txt-section"));
         System.out.println(result.getText());
 
         String URL = driver.getCurrentUrl();
-        System.out.println(URL);
+        System.out.println("First URL: " + URL);
 
-//        WebElement logo = driver.findElement(By.linkText("Snapdeal"));
-//        logo.click();
+        Thread.sleep(3000);
+
+        WebElement logo = driver.findElement(By.cssSelector("a[class='notIeLogoHeader hashAdded']"));
+        logo.click();
+
+        String URL2 = driver.getCurrentUrl();
+        System.out.println("Second URL: " + URL2);
+
 
 
 
