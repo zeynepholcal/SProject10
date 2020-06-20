@@ -40,11 +40,17 @@ public class ReadMe {
         WebElement click = driver.findElement(By.className("searchformButton"));
         click.click();
 
+        Thread.sleep(3000);
+
         WebElement result = driver.findElement(By.className("search-result-txt-section"));
         System.out.println(result.getText());
 
-//        String URL = driver.getCurrentUrl();
-//        System.out.println(URL);  
+        String URL = driver.getCurrentUrl();
+        System.out.println(URL);
+
+//        WebElement logo = driver.findElement(By.linkText("Snapdeal"));
+//        logo.click();
+
 
 
     }
