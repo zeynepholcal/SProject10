@@ -1,6 +1,8 @@
 package Part1;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ReadMe {
@@ -32,6 +34,29 @@ public class ReadMe {
         driver.manage().window().maximize();
 
         driver.get("http://demoqa.com/text-box");
+
+       WebElement username = driver.findElement(By.id("userName"));
+
+       username.sendKeys("Automation");
+
+       WebElement userEmail = driver.findElement(By.id("userEmail"));
+
+       userEmail.sendKeys("Testing@gmail.com");
+
+       WebElement currentAddress = driver.findElement(By.id("currentAddress"));
+
+       currentAddress.sendKeys("Testing Current Address part 1");
+
+       WebElement currentAddress2 = driver.findElement(By.id("permanentAddress"));
+
+       currentAddress2.sendKeys("Testing Current Address part 2");
+
+
+
+
+
+
+
 
 
 
