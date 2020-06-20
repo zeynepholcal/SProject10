@@ -27,7 +27,7 @@ public class ReadMe {
      */
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium dependency\\drivers\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
@@ -57,8 +57,8 @@ public class ReadMe {
 
        submitButton.click();
         WebElement users = driver.findElement(By.id("name"));
-
         System.out.println(users.getText());
+
         WebElement email = driver.findElement(By.id("email"));
         System.out.println(email.getText());
 

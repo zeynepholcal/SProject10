@@ -22,7 +22,7 @@ public class ReadMe {
      */
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium dependency\\drivers\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
