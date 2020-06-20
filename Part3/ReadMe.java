@@ -50,7 +50,9 @@ public class ReadMe {
 
         Thread.sleep(3000);
 
-        WebElement logo = driver.findElement(By.cssSelector("a[class='notIeLogoHeader hashAdded']"));
+       // WebElement logo = driver.findElement(By.cssSelector("a[class='notIeLogoHeader hashAdded']"));
+        WebElement logo = driver.findElement(By.cssSelector("a[href='https://www.snapdeal.com']:nth-of-type(1)"));
+
         logo.click();
 
         String URL2 = driver.getCurrentUrl();
